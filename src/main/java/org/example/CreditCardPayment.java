@@ -9,7 +9,7 @@ public class CreditCardPayment implements PaymentStrategy {
         System.out.print("Digite o número do cartão: ");
         String numeroCartao = scanner.nextLine();
 
-        while (numeroCartao.length() < 13 || numeroCartao.length() > 16) {
+        while (numeroCartao.length() < 13 || numeroCartao.length() > 16) { // Verifica se o número do cartão é "valido"
             System.out.print("Número inválido, digita novamente: ");
             numeroCartao = scanner.nextLine();
         }
